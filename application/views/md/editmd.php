@@ -1,13 +1,14 @@
  <body class="container theme-showcase" role="main">
  
- <div class="row">
+ <!--div class="row">
  
  <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 10px;margin-top: 10px;">
- <button id="submit">submit</button>
+
+ <button id="submit" class="btn btn-default btn-lg btn-block">提交</button>
  </div>
  
  <div class="col-md-1 col-sm-1 col-xs-2" >
- <h5>author</h5>
+ <label for="author">author</label>
  </div>
  
  <div class="col-md-11 col-sm-11 col-xs-10" style="margin-bottom: 10px;">
@@ -70,8 +71,58 @@
   <div id="preview"> </div>
   </div>
   
-</div>
+</div-->
 	 
+	<form role="form">
+
+ 
+ 
+ <div class="form-group">
+ <label for="author">author</label>
+ <input class="form-control" type="text" id="author" placeholder="请输入作者"/>
+</div>
+  
+  <div class="form-group">
+ <label for="date">date</label>
+  <input class="form-control" type="text" id="date" placeholder="请输入日期"/>
+  </div>
+  
+ <div class="form-group">
+ <label for="title">title</label>
+  <input class="form-control" type="text" id="title"  placeholder="请输入标题"/>
+  </div>
+  
+  <div class="form-group">
+ <label for="tags">tags</label>
+  <input class="form-control" type="text" id="tags" placeholder="请输入标签"/>
+  </div>
+  
+  <div class="form-group">
+ <label for="category">category</label>
+  <input class="form-control" type="text" id="category" placeholder="请输入分类"/>
+  </div>
+  
+  <div class="form-group">
+ <label for="status">status</label>
+  <input class="form-control" type="text" id="status"  placeholder="请输入状态"/>
+  </div>
+  
+  <div class="form-group">
+ <label for="summary">summary</label>
+  <input class="form-control" type="text" id="summary"  placeholder="请输入summary"/>
+  </div>
+  
+ <div class="form-group">
+  <textarea class="form-control" id="text-input" oninput="this.editor.update()" rows="30" cols="100%">Type **Markdown** here.</textarea>
+	 </div>
+	 
+	 <div class="form-group">
+  <div id="preview"> </div>
+  </div>
+  
+  <button id="submit" class="btn btn-default btn-lg btn-block">提交</button>
+  
+</div>
 	
     
 	<script>
